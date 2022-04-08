@@ -1,5 +1,4 @@
 #pragma once
-#include "Header.h"
 #include "Student.h"
 
 class Group
@@ -21,11 +20,5 @@ public:
 	void set(int index, Student student);
 	void add(Student student);
 
-	void sortByStudentNameAsc();
-	void sortByStudentNameDesc();
-	void sortByStudentMarkAsc();
-	void sortByStudentMarkDesc();
-	Student getMaxAgeStudent();
-	Student getMinAgeStudent();
-	double calcAvgAgeOfStudents();
+	string getInfo();
 };
