@@ -18,7 +18,11 @@ Group::Group(string name, Student* list, int size){
 	this->list = list;
 }
 
-Group::~Group(){}
+Group::~Group(){
+	if (list != NULL) {
+		delete[] list;
+	}
+}
 
 string Group::getName(){
 	return name;
