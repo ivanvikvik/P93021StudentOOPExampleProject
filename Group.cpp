@@ -38,7 +38,7 @@ int Group::getSize(){
 
 Student Group::get(int index){
 	if (list == NULL || index < 0 || index >= size) {
-		return Student("", 0, 0);
+		return Student("", 0, 0, ' ');
 	}
 	else {
 		return list[index];

@@ -11,7 +11,7 @@ public:
 
 	double calculateAvgMark(Group group);
 	double calculateAvgAge(Group group);
-	double getCountOfMale(Group group);
-	double getCountOfFemale(Group group);
+	int getCountOfMale(Group group);
+	int getCountOfFemale(Group group);
 };
 

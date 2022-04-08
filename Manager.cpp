@@ -26,9 +26,11 @@ double Manager::calculateAvgAge(Group group){
 	}
 
 	avg /= group.getSize();
+
+	return avg;
 }
 
-double Manager::getCountOfMale(Group group){
+int Manager::getCountOfMale(Group group){
 	int count = 0;
 	for (int i = 0; i < group.getSize(); i++)
 	{
@@ -40,6 +42,6 @@ double Manager::getCountOfMale(Group group){
 	return count;
 }
 
-double Manager::getCountOfFemale(Group group) {
-	return group.getSize() - getCountOfMale(group);
+int Manager::getCountOfFemale(Group group) {
+	return (group.getSize() - getCountOfMale(group));
 }
