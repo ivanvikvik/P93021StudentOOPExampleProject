@@ -4,12 +4,14 @@ Student::Student() {
 	name = "no name";
 	age = 0;
 	mark = 0;
+	sex = 'm';
 }
 
-Student::Student(string name, int age, double mark) {
+Student::Student(string name, int age, double mark, char sex) {
 	this->name = name;
 	this->age = age;
 	this->mark = mark;
+	this->sex = sex;
 }
 
 string Student::getName() {
@@ -39,8 +41,18 @@ void Student::setMark(double mark) {
 		this->mark = mark;
 	}
 }
+char Student::getSex() {
+	return sex;
+}
+
+void Student::setSex(char sex) {
+	if (sex == 'm' || sex == 'f') {
+		this->sex = sex;
+	}
+}
 
 string Student::getInfo() {
 	return name + ": age = " + to_string(age)
-		+ "; mark = " + to_string(mark);
+		+ "; mark = " + to_string(mark)
+		+ "; sex = " + (sex == 'm' ? "male" : "female");
 }

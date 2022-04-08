@@ -12,14 +12,7 @@ int main() {
 	group.add(st2);
 	group.add(st3);
 
-	double avg = 0;
-
-	for (int i = 0; i < group.getSize(); i++)
-	{
-		avg += group.get(i).getMark();
-	}
-
-	avg /= group.getSize();
+	
 
 	cout << group.getInfo() << endl;
 	cout << "Avg mark of group " << group.getName() << " = " << avg << endl;
