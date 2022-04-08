@@ -43,5 +43,6 @@ int Manager::getCountOfMale(Group group){
 }
 
 int Manager::getCountOfFemale(Group group) {
-	return (group.getSize() - getCountOfMale(group));
+	int count = getCountOfMale(group);
+	return group.getSize() - count;
 }

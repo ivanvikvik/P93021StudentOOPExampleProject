@@ -8,7 +8,7 @@ int main() {
 
 	Student st1("Alex", 14, 9, 'm');
 	Student st2("Nastya", 13, 8, 'f');
-	Student st3("Nikita", 15, 4, 'm');
+	Student st3("Nikita", 15, 4, 'f');
 
 	group.add(st1);
 	group.add(st2);
@@ -16,10 +16,15 @@ int main() {
 	
 	cout << group.getInfo() << endl;
 	
-	int count = manager1.getCountOfMale(group);
+	int countM = manager1.getCountOfMale(group);
+	int countF = manager1.getCountOfFemale(group);
 
 	cout << "Count of male of group " << group.getName() 
-		<< " = " << count << endl;
+		<< " = " << countM << endl;
 	
+	cout << "Count of female of group " << group.getName()
+		<< " = " << countF << endl;
+
+
 	return 0;
 }
