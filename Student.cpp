@@ -27,7 +27,8 @@ int Student::getAge() {
 }
 
 void Student::setAge(int age) {
-	if (age >= 14 && age <= 80) {
+	if (age >= MIN_STUDENT_AGE 
+		&& age <= MAX_STUDENT_AGE) {
 		this->age = age;
 	}
 }
@@ -37,7 +38,7 @@ double Student::getMark() {
 }
 
 void Student::setMark(double mark) {
-	if (mark >= 0 && mark <= 10) {
+	if (mark >= MIN_MARK && mark <= MAX_MARK) {
 		this->mark = mark;
 	}
 }

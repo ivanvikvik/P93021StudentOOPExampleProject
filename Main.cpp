@@ -3,6 +3,7 @@
 #include "Manager.h"
 
 int main() {
+
 	Group group("10b");
 	Manager manager1("Mariya Ivanovna");
 

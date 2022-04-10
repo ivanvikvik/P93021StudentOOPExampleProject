@@ -9,6 +9,12 @@ private:
 	char sex;
 
 public:
+	static const int MIN_MARK = 0;
+	static const int MAX_MARK = 10;
+	
+	static const int MIN_STUDENT_AGE = 13;
+	static const int MAX_STUDENT_AGE = 80;
+
 	Student();
 	Student(string name, int age, double mark, char sex);
 	string getName();

@@ -7,6 +7,8 @@ class Manager
 private:
 	string name;
 public:
+	static const int MIN = 10;
+
 	Manager(string name);
 
 	double calculateAvgMark(Group group);
