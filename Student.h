@@ -3,6 +3,9 @@
 
 class Student {
 private:
+	// 1) static field definition
+	static int count;
+	
 	string name;
 	int age;
 	double mark;
@@ -14,9 +17,14 @@ public:
 	
 	static const int MIN_STUDENT_AGE = 13;
 	static const int MAX_STUDENT_AGE = 80;
-
+	
 	Student();
 	Student(string name, int age, double mark, char sex);
+	~Student();
+
+	// 2) static method definition
+	static int getCount();
+
 	string getName();
 	void setName(string name);
 	int getAge();

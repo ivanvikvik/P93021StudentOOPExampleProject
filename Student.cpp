@@ -1,6 +1,11 @@
 #include "Student.h"
 
+// 3) static field initialization
+int Student::count = 0;
+
 Student::Student() {
+	// 4) static field increment
+	count++;
 	name = "no name";
 	age = 0;
 	mark = 0;
@@ -8,10 +13,21 @@ Student::Student() {
 }
 
 Student::Student(string name, int age, double mark, char sex) {
+	// 4) static field increment
+	count++;
 	this->name = name;
 	this->age = age;
 	this->mark = mark;
 	this->sex = sex;
+}
+
+Student::~Student() {
+	// 5) static field decrement
+	count--;
+}
+
+int Student::getCount() {
+	return count;
 }
 
 string Student::getName() {
