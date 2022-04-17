@@ -1,35 +1,38 @@
-class Zoo;
-class Shop;
-class Animal;
-
-class Animal {
-	friend void Zoo::add(Animal animal);
-	friend class Shop;
-private:
-	double power;
-};
-
-class Zoo {
-	friend class Shop;
-
-private:
-	int countOfAnimal;
-
-public:
-	void add(Animal animal);
-};
-
-void Zoo::add(Animal animal) {
-	//...
-	double pow = animal.power;
-}
-
-class Shop {
-public:
-	void add(Animal animal) {
-		Zoo zoo;
-		zoo.countOfAnimal = 200;
-		//...
-		double pow = animal.power;
-	}
-};
+//#include "Header.h"
+//
+//class Hero {
+//	friend void main(void);
+//private:
+//	int* weaks;
+//	int size;
+//public:
+//	Hero() {
+//		size = 5;
+//		weaks = new int[size];
+//	}
+//
+//	~Hero() {
+//		delete[] weaks;
+//		size = 0;
+//	}
+//};
+//
+//void somethingStrange(Hero& hero) {
+//	//...
+//}
+//
+//void main() {
+//	Hero hero;
+//
+//	for (int i = 0; i < hero.size; i++)
+//	{
+//		hero.weaks[i] = i;
+//	}
+//
+//	somethingStrange(hero);
+//
+//	for (int i = 0; i < hero.size; i++)
+//	{
+//		cout << hero.weaks[i] << " " << endl;
+//	}
+//}
