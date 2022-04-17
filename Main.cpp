@@ -1,31 +1,21 @@
+#include <ctime>
 #include "Student.h"
 #include "Group.h"
 #include "Manager.h"
 
+void changeMark(Student& st) {
+	srand(time(NULL));
+	// [rand() % (max - min + 1)] + min
+	st.mark = rand() % 7 + 4;	
+}
+
 int main() {
-	{
-		Student st1("Alex", 14, 9, 'm');
-	}
 	Student st2("Nastya", 13, 8, 'f');
-	Student st3("Nikita", 15, 4, 'm');
-	cout << "Count: " << Student::getCount() << endl;
-
-	/*Group group("10b");
-	Manager manager1("Mariya Ivanovna");
-
-	Student st4;
-
-	group.add(st1);
-	group.add(st2);
-	group.add(st3);
-	*/   
-	/*cout << group.getInfo() << endl;
-
-	int countM = manager1.getCountOfMale(group);
-
-	cout << "Count of male of group " << group.getName()
-		<< " = " << countM << endl;*/
-
 	
+	cout << "Before: " << st2.getInfo() << endl;
+	changeMark(st2);
+	cout << "After: " << st2.getInfo() << endl;
+
+
 	return 0;
 }

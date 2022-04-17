@@ -2,6 +2,8 @@
 #include "Header.h"
 
 class Student {
+	friend void changeMark(Student& st);
+
 private:
 	// 1) static field definition
 	static int count;

@@ -3,6 +3,8 @@
 
 class Group
 {
+	friend class Manager;
+
 private:
 	string name;
 	int size;
