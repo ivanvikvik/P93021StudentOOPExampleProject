@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Test Operation Overloading">
+      <UniqueIdentifier>{eb032de9-220f-4990-9891-34ec33bd1c94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,6 +33,12 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\TestProject\Main.cpp">
+      <Filter>Source Files\Test Operation Overloading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestProject\Point2D.cpp">
+      <Filter>Source Files\Test Operation Overloading</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -43,6 +52,12 @@
     </ClInclude>
     <ClInclude Include="Manager.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestProject\Header.h">
+      <Filter>Source Files\Test Operation Overloading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestProject\Point2D.h">
+      <Filter>Source Files\Test Operation Overloading</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

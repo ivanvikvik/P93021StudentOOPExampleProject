@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\TestProject\Main.cpp" />
+    <ClCompile Include="..\TestProject\Point2D.cpp" />
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Manager.cpp" />
@@ -146,6 +148,8 @@
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\TestProject\Header.h" />
+    <ClInclude Include="..\TestProject\Point2D.h" />
     <ClInclude Include="Group.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Manager.h" />
