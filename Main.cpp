@@ -1,5 +1,6 @@
 //#include <ctime>
-//#include "Student.h"
+#include "Leader.h"
+
 //#include "Group.h"
 //#include "Manager.h"
 //
@@ -9,13 +10,11 @@
 //	st.mark = rand() % 7 + 4;	
 //}
 //
-//int main() {
-//	Student st2("Nastya", 13, 8, 'f');
-//	
-//	cout << "Before: " << st2.getInfo() << endl;
-//	changeMark(st2);
-//	cout << "After: " << st2.getInfo() << endl;
-//
-//
-//	return 0;
-//}
+int main() {
+
+	Leader leader1("Alex", 15, 10,'m', "+34567889654", "alex@gmail.com");
+
+	cout << leader1.getInfo() << endl;
+	
+	return 0;
+}

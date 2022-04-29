@@ -34,7 +34,7 @@ string Student::getName() {
 	return name;
 }
 
-void Student::setName(string initName) {
+void Student::setName(string name) {
 	this->name = name;
 }
 
