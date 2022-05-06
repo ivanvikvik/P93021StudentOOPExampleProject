@@ -38,10 +38,11 @@ void Leader::setEmail(string e_mail) {
 }
 
 
-//string Leader::getInfo() {
-//	return name + ": age = " + to_string(age)
-//		+ "; mark = " + to_string(mark)
-//		+ "; sex = " + (sex == 'm' ? "male" : "female")
-//		+ "; phone number = " + phoneNumber
-//		+ "; e-mail = " + e_mail;
-//}
+string Leader::getInfo() {
+	cout << "Leader method!!!" << endl;
+	return getName() + ": age = " + to_string(getAge())
+		+ "; mark = " + to_string(getMark())
+		+ "; sex = " + (getSex() == 'm' ? "male" : "female")
+		+ "; phone number = " + phoneNumber
+		+ "; e-mail = " + e_mail;
+}

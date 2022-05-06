@@ -69,6 +69,8 @@ void Student::setSex(char sex) {
 }
 
 string Student::getInfo() {
+	cout << "Student method!!!" << endl;
+
 	return name + ": age = " + to_string(age)
 		+ "; mark = " + to_string(mark)
 		+ "; sex = " + (sex == 'm' ? "male" : "female");

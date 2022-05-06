@@ -39,5 +39,5 @@ public:
 	char getSex();
 	void setSex(char sex);
 
-	string getInfo();
+	virtual string getInfo();
 };

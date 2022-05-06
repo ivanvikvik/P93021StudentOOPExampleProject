@@ -1,20 +1,26 @@
 //#include <ctime>
 #include "Leader.h"
 
-//#include "Group.h"
-//#include "Manager.h"
-//
-//void changeMark(Student& st) {
-//	srand(time(NULL));
-//	// [rand() % (max - min + 1)] + min
-//	st.mark = rand() % 7 + 4;	
-//}
-//
+//!!!
+void testing(Student** list, int size) {
+	for (int i = 0; i < size; i++)
+	{
+		cout << list[i]->getInfo() << endl;
+	}
+}
+
+
 int main() {
+	const int SIZE = 2;
+	
+	//Student* student = new Student[SIZE];
 
-	Leader leader1("Alex", 15, 10,'m', "+34567889654", "alex@gmail.com");
+	Student** list = new Student * [SIZE];
 
-	cout << leader1.getInfo() << endl;
+	list[0] = new Student("Alex", 15, 10, 'm');
+	list[1] = new Leader("Nikita", 15, 4, 'f', "+375292345678", "tonikita@nikita.by");
+
+	testing(list, SIZE);
 	
 	return 0;
 }

@@ -18,4 +18,5 @@ public:
 	string getEmail();
 	void setEmail(string e_mail);
 
+	string getInfo();
 };
